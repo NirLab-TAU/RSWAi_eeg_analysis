@@ -7,7 +7,7 @@
 ## Setup
 
 1. **Clone/download** this repository.
-2. Add FieldTrip (and optionally EEGLAB) to your MATLAB path and run `ft_defaults`.
+2. Add FieldTrip to your MATLAB path and run `ft_defaults`.
 3. Copy your template files into `/templates` **or** update paths in scripts (all paths are written with `<YOUR_PATH>` placeholders—set them once at the top of each script as instructed in comments).
 4. Keep raw data and subject lists under `/data` (not committed).
 
@@ -18,7 +18,7 @@
 - **Raw EEG:** EGI high-density *.mff* per subject.
 - **Sleep staging:** CSV/Excel with epoch codes (30-s epochs). Project uses the stage codes:
   - `200 = Wake, 100 = REM, -100 = N1, -200 = N2, -300 = N3`.
-- **Subject list:** a MATLAB file (e.g., `subjects_files_2.mat`) with fields: `mff_file`, `scoring_csv`, `subject`, `group`.
+- **Subject list:** a MATLAB file (e.g., `subjects_files.mat`) with fields: `mff_file`, `scoring_csv`, `subject`, `group`.
 
 ---
 
