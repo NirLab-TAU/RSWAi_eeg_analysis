@@ -3,6 +3,12 @@
 *You can keep other project helpers (e.g., ****`pre_post_val.m`****, ****`group_sleep_var.m`****, ****`task_para4plot.m`****, ****`groups_indx.m`****, ****`Fisher_transf.m`****, ****`donutchart.m`****, ****`daviolinplot.m`****) under ****`/helpers`**** as well.*
 
 ---
+## Description
+
+This repository provides MATLAB scripts for preprocessing and analyzing high-density EEG sleep recordings from the EGI system.  
+The pipeline converts raw *.mff* data into FieldTrip structures, applies artifact cleaning (including ICA), and extracts REM-only segments for advanced analysis.  
+It further computes power spectral measures, quantifies REM sleep without atonia (RSWAi), and performs group-level statistics and visualizations.  
+The scripts were used in the study: *Beyond RBD: Covert REM sleep abnormalities in Parkinson’s disease* (Lanir-Azaria et al., 2023).
 
 ## Setup
 
