@@ -114,12 +114,6 @@ Lanir-Azaria S, Nir Y, Tauman R, Zitser J, Giladi N. (2023). *Beyond RBD: Covert
 
 ---
 
-## License
-
-Choose and add a license (e.g., MIT, BSD-3-Clause). If unsure, MIT is a permissive default.
-
----
-
 ## Contact
 
 Questions or issues? Please open an issue or contact **Saar Lanir-Azaria**.
