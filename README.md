@@ -3,11 +3,17 @@
 *You can keep other project helpers (e.g., ****`pre_post_val.m`****, ****`group_sleep_var.m`****, ****`task_para4plot.m`****, ****`groups_indx.m`****, ****`Fisher_transf.m`****, ****`donutchart.m`****, ****`daviolinplot.m`****) under ****`/helpers`**** as well.*
 
 ---
+## Description
+
+This repository provides MATLAB scripts for preprocessing and analyzing high-density EEG sleep recordings from the EGI system.  
+The pipeline converts raw *.mff* data into FieldTrip structures, applies artifact cleaning (including ICA), and extracts REM-only segments for advanced analysis.  
+It further computes power spectral measures, quantifies REM sleep without atonia (RSWAi), and performs group-level statistics and visualizations.  
+The scripts were used in the study: *Beyond RBD: Covert REM sleep abnormalities in Parkinson’s disease* (Lanir-Azaria et al., 2023).
 
 ## Setup
 
 1. **Clone/download** this repository.
-2. Add FieldTrip (and optionally EEGLAB) to your MATLAB path and run `ft_defaults`.
+2. Add FieldTrip to your MATLAB path and run `ft_defaults`.
 3. Copy your template files into `/templates` **or** update paths in scripts (all paths are written with `<YOUR_PATH>` placeholders—set them once at the top of each script as instructed in comments).
 4. Keep raw data and subject lists under `/data` (not committed).
 
@@ -18,7 +24,7 @@
 - **Raw EEG:** EGI high-density *.mff* per subject.
 - **Sleep staging:** CSV/Excel with epoch codes (30-s epochs). Project uses the stage codes:
   - `200 = Wake, 100 = REM, -100 = N1, -200 = N2, -300 = N3`.
-- **Subject list:** a MATLAB file (e.g., `subjects_files_2.mat`) with fields: `mff_file`, `scoring_csv`, `subject`, `group`.
+- **Subject list:** a MATLAB file (e.g., `subjects_files.mat`) with fields: `mff_file`, `scoring_csv`, `subject`, `group`.
 
 ---
 
